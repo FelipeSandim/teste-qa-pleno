@@ -58,6 +58,8 @@ Cada exemplo é criado nas duas portas, depois do reset, e comparado ao oracle. 
 
 No candidato atual, abaixo. Depois do conserto, as linhas `FAIL` viram `pass` e a última linha fica `41 passaram, 0 falharam`.
 
+A data `emitida_em` das duas faturas da corrida é o dia em que o comando roda. O restante desta saída não muda.
+
 ```
 [pass] as portas anunciam v1 e v2
        v1=v1 v2=v2
