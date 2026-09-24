@@ -57,4 +57,6 @@ O caminho sequencial está são: fatura única de R$ 28,00, segunda chamada 409,
 ]
 ```
 
+`emitida_em` é o dia em que o comando roda. Ids 61 e 62, os dois HTTP 201 e o valor R$ 234,08 se repetem a cada `POST /_reset`.
+
 Cenário "dois faturamentos simultâneos da cotação 70" em `node regressao/suite.js`, nas duas versões.
