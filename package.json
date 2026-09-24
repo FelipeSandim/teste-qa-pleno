@@ -1,0 +1,15 @@
+{
+  "name": "cotacao-faturamento",
+  "version": "2.0.0-rc1",
+  "private": true,
+  "description": "Servico de cotacao de frete e faturamento",
+  "main": "server.js",
+  "scripts": {
+    "start:v1": "node server.js v1",
+    "start:v2": "node server.js v2",
+    "test": "node regressao/suite.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

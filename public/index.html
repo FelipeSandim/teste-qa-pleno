@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cotação &amp; Faturamento</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Cotação &amp; Faturamento</h1>
+    <span class="badge">versão <strong id="versao">…</strong></span>
+  </header>
+
+  <main>
+    <section class="barra">
+      <label for="filtro-cliente">Cliente</label>
+      <select id="filtro-cliente">
+        <option value="">Todos os clientes</option>
+        <option>Comercial Aurora</option>
+        <option>Metalúrgica Vale</option>
+        <option>Distribuidora Sul</option>
+        <option>Atacado Primavera</option>
+        <option>Indústria Horizonte</option>
+        <option>Rede Bom Preço</option>
+      </select>
+      <button id="resetar" type="button">Resetar dados</button>
+      <span id="contador" class="contador"></span>
+    </section>
+
+    <div class="colunas">
+      <section class="painel">
+        <h2>Cotações</h2>
+        <table id="tabela">
+          <thead>
+            <tr>
+              <th>ID</th><th>Cliente</th><th>Peso (kg)</th><th>Volumes</th>
+              <th>Rota</th><th>Desconto</th><th>Total</th><th>Faturada</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <aside class="lateral">
+        <section class="painel">
+          <h2>Detalhe</h2>
+          <div id="detalhe"><p class="vazio">Selecione uma cotação na tabela.</p></div>
+          <button id="faturar" type="button" disabled>Faturar</button>
+          <p id="aviso" class="aviso"></p>
+        </section>
+
+        <section class="painel">
+          <h2>Nova cotação</h2>
+          <form id="form-cotacao">
+            <label for="cliente">Cliente</label>
+            <input id="cliente" name="cliente" type="text" value="Comercial Aurora">
+
+            <label for="peso_kg">Peso (kg)</label>
+            <input id="peso_kg" name="peso_kg" type="number" step="0.01" value="10">
+
+            <label for="volumes">Volumes</label>
+            <input id="volumes" name="volumes" type="number" value="1">
+
+            <label for="uf_origem">UF de origem</label>
+            <input id="uf_origem" name="uf_origem" type="text" maxlength="2" value="SP">
+
+            <label for="uf_destino">UF de destino</label>
+            <input id="uf_destino" name="uf_destino" type="text" maxlength="2" value="RJ">
+
+            <button type="submit">Criar cotação</button>
+          </form>
+          <p id="aviso-form" class="aviso"></p>
+        </section>
+
+        <section class="painel">
+          <h2>Faturas</h2>
+          <ul id="faturas"></ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
