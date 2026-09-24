@@ -31,7 +31,7 @@ Para olhar a tela: `node server.js v1` em http://localhost:3001 e `node server.j
 
 ## O que a suíte está provando
 
-- Faixa de peso, rota, imposto e arredondamento do README, iguais nas duas versões.
+- Faixa de peso, rota, imposto e arredondamento do README. O esperado é o mesmo número nas duas versões. A v2 falha no limite da faixa e no centavo.
 - Desconto da spec, aplicado depois do imposto. Os critérios de aceite (15, 30 e 80 volumes) passam. Os pisos de 20 e de 50 volumes falham.
 - Listagem com o mesmo `valor_total` do detalhe.
 - Uma cotação, uma fatura. Dois POST ao mesmo tempo na cotação 70 geram duas faturas.
