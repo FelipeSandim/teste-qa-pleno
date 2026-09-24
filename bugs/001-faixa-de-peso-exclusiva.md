@@ -43,7 +43,7 @@ A v1 devolve esses três valores.
 | 50 kg SP→BA | 110 | 234,08 |
 | 100 kg SP→MG | 180 | 282,22 |
 
-A cotação 99 da carga (10 kg, 8 volumes, PR→BA, em aberto) sai a R$ 127,68 na v2 e a R$ 53,20 na v1. Na tela da v2 a linha e o detalhe mostram base R$ 60,00 e total R$ 127,68.
+A cotação 99 da carga (10 kg, 8 volumes, PR→BA, em aberto) sai a R$ 127,68 na v2 e a R$ 53,20 na v1. No detalhe da tela, a base aparece como R$ 60,00 e o total como R$ 127,68. A linha da tabela não tem coluna de base: mostra desconto "—" e o total R$ 127,68, igual ao detalhe, porque 8 volumes não geram desconto.
 
 Pesos imediatamente ao lado do limite continuam certos: 9,99 kg fica em R$ 28,00 e 10,01 kg fica em R$ 67,20.
 
